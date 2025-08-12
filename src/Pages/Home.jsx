@@ -16,7 +16,7 @@ function Home() {
       {
       id: 23,
       ItemName: "Car",
-      Price: 500000,
+      Rate: 500000,
       description: "Well maintained",
       Location: "Ernakulam",
       Name: "Ravi",
@@ -26,7 +26,7 @@ function Home() {
     {
       id: 24,
       ItemName: "Sun Glass",
-      Price: 9000,
+      Rate: 9000,
       description: "Stylish",
       Location: "Kakkanad",
       Name: "soni",
@@ -36,7 +36,7 @@ function Home() {
     {
       id: 25,
       ItemName: "Cycle",
-      Price: 11000,
+      Rate: 11000,
       description: "10 years old",
       Location: "Kalamassery",
       Name: "Aswin",
@@ -46,7 +46,7 @@ function Home() {
     {
       id: 26,
       ItemName: "Bike",
-      Price: 980000,
+      Rate: 980000,
       description: "Well maintained",
       Location: "Alappuzha",
       Name: "Aswin",
@@ -56,7 +56,7 @@ function Home() {
     {
       id: 27,
       ItemName: "HeadPhone",
-      Price: 9000,
+      Rate: 9000,
       description: "new model",
       Location: "ALuva",
       Name: "Renu",
@@ -77,7 +77,7 @@ function Home() {
   <h2>Buy and Sell Items Easily</h2>
 </div>
     </Container>
-    <div className="text-center m-1">
+    <div className="text-center ">
 <Link to={"/dashboard"}>  
     <button className='btn btn-warning border-dark '>Go to Dashboard</button>
     </Link>
@@ -85,11 +85,11 @@ function Home() {
 
       <Container className='p-1'>
         <h2 className='text-center p-3'>BUY ITEMS FROM OUR FRESH RECOMMENDATIONS</h2>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mb-3">
             {items.map((item) => (
           <div className="col-sm-6 col-md-4  col-lg-3 d-flex justify-content-center align-items-center">
 <Link to={`/item/${item.id}`} state={{item}} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <Card  style={{ height: "300px", width: "200px" }}>
+                <Card className='shadow'  style={{ height: "300px", width: "210px" }}>
                   <Card.Body className='text-center'>
                     <img src={item.img} alt="" style={{height:"200px", width:"180px"}} />
                     <Card.Title>{item.ItemName}</Card.Title>

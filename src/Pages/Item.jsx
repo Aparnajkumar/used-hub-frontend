@@ -20,9 +20,9 @@ function Item() {
             <div className="col-md-6  shadow border-1 p-2 m-1">
   <h1 className='text-center'>{item.ItemName}</h1>
 <div className='d-flex '>
-  <img src={item.img} alt="" style={{height:"200px", width:"250px"}} className='me-3 ms-1' />
+  <img src={item.img} alt="" style={{height:"200px", width:"200px"}} className='me-3 ' />
 <div>
-    <h5 className='text-success'>Price: ₹{item.Rate}</h5>
+    <h5 className='text-success'>Price:₹{item.Rate}</h5>
     <p>Description: {item.description}</p>
     <p>Location: {item.Location}</p>
     <hr />
